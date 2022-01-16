@@ -1,6 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
     margin: 0%;
+    padding: 0%;
 
     
 }
@@ -8,6 +10,10 @@ body{
     font-size: 18px;
     padding-left:10%;
 
+}
+.section-head:hover{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
 }
 .container{
     display:grid;
@@ -25,7 +31,7 @@ body{
     margin: 0%;
 }
 .preebook p{
-    font-size:14px;
+    font-size:16px;
     margin-bottom:10px;
 }
 .preebook a{
@@ -62,14 +68,19 @@ body{
 .populars{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
+    justify-content: space-between;
     padding-left: 5%;
     padding-top: 30px;
 }
 .popular{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 35px;
     width: 329px;
     border: 2px;
     font-size: 28px;
     padding-top: 30px;
+    background-color: rgb(247, 244, 244);
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
 
@@ -80,6 +91,11 @@ body{
 }
 .collecton-info{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
 }
 
   p{
@@ -102,8 +118,9 @@ body{
 
 
 .center{
+    text-align: center;
+    width: 100%;
     background-color: rgb(226, 255, 252);
-    padding-left: 40%;
     border-radius: 10%;
     
 }
@@ -134,33 +151,36 @@ footer{
 
 /* media queries */
 
-@media only screen and (max-width:688px){
+    @media only screen and (min-width: 689px) and (max-width:820px) {
 
-    .container{
-        grid-template-columns: repeat(1,1fr);
-        padding: 0%;
+        .populars{
+            grid-template-columns: repeat(2,1fr);
+        }
+      }
 
+
+      @media only screen and (max-width:688px){
+
+        .container{
+            grid-template-columns: repeat(1,1fr);
     
-    }
-    .preebook h1{
-        font-size:25px;
-    }
-    
-    .populars{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .popular{
-        padding-left:10%;
-    }
-    .see-more{
-        font-size: 10px;
-    }
-    .center{
-        padding-right: 20%;
+        
+        }
+        .preebook h1{
+            font-size:25px;
+        }
+        
+        .populars{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .popular{
+            padding-left:10%;
+        }
+        .see-more{
+            font-size: 10px;
+        }
+        .center{
+            width: 75px;
+        }
     }
 
-
-    }
-
-
-    
