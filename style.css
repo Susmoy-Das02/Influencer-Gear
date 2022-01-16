@@ -24,6 +24,7 @@ body{
 }
 .preebook p{
     font-size:14px;
+    margin-bottom:10px;
 }
 .preebook a{
     text-decoration: none;
@@ -51,7 +52,13 @@ body{
     grid-template-columns: repeat(3 ,1fr);
     grid-column-gap: 30px;
     padding-left: 5%;
+    padding-top: 30px;
 }
+.popular{
+    padding-bottom:30px;
+    font-size: 28px;
+}
+
 
 .popular .banner img{
     width:300px;
@@ -59,6 +66,10 @@ body{
 }
 .collecton-info{
     display: flex;
+}
+
+  p{
+    margin: 0%;
 }
 .fa-star{
     font-size: 16px;
