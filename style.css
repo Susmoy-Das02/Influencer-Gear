@@ -1,10 +1,12 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0%;
+
     
 }
 .section-head{
     font-size: 18px;
+    padding-left:10%;
 
 }
 .container{
@@ -37,11 +39,14 @@ body{
     color: white;
     padding: 13px 28px;
     width:166px;
+   
 
 
 }
-.main-cemera{
+.main-cemera img{
+    position: absolute;
     width: 440px;
+    height: 414px;
     padding-left: 835px;
     padding-top: 211px;
 }
@@ -57,16 +62,15 @@ body{
 .populars{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    grid-column-gap: 30px;
     padding-left: 5%;
     padding-top: 30px;
 }
 .popular{
-    padding-bottom:30px;
+    width: 329px;
+    border: 2px;
     font-size: 28px;
-    background-color: white;
-    border: 2px solid white;
-    box-shadow: 30px 15px 5px white;
+    padding-top: 30px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
 
 
@@ -92,8 +96,35 @@ body{
 .see-more{
     color: #E02C6D;
     padding-top: 40px;
-    padding-left:90px;
+    padding-left:80%;
 }
+
+
+
+.center{
+    background-color: rgb(226, 255, 252);
+    padding-left: 40%;
+    border-radius: 10%;
+    
+}
+.signup_link a{
+    text-decoration: none;
+    color: black;
+}
+.center h1{
+    border-bottom: 1px solid silver;
+
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  
+
+
+
+
 
 footer{
     background-color: black;
@@ -107,12 +138,29 @@ footer{
 
     .container{
         grid-template-columns: repeat(1,1fr);
-        width:100%;
+        padding: 0%;
+
+    
+    }
+    .preebook h1{
+        font-size:25px;
     }
     
     .populars{
         grid-template-columns: repeat(1,1fr);
     }
-}
+    .popular{
+        padding-left:10%;
+    }
+    .see-more{
+        font-size: 10px;
+    }
+    .center{
+        padding-right: 20%;
+    }
+
+
+    }
+
 
     
